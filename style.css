@@ -404,20 +404,23 @@ home-img img:hover{
 } 
 
 /* Services */
-.services{
+.services {
     background-color: var(--bg-color);
     color: black;
 }
+
 .services h2 {
     margin-bottom: 5rem;
     color: white;
 }
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
-}
+} 
+
 .service-box {
     background-color: var(--main-color);
     height: 300px;
@@ -426,13 +429,15 @@ home-img img:hover{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
 .service-box:hover{
-    background-color: white;
+    background: white;
     color: black;
     border: 5px solid var(--main-color);
-    transform: scale(0.3);
+    transform: scale(1.03);
 }
-service-box .service-info {
+
+.service-box .service-info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -441,34 +446,36 @@ service-box .service-info {
     align-items: baseline;
     padding: 5rem 5rem;
 }
+
 .service-info h4 {
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
 }
+
 .services-info p {
     font-size: 1.6rem;
     font-weight: 800;
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
-}
+} 
 
-/* Testimonials */
-.testimonials {
+/* Projects */
+.projects {
     background: var(--second-bg-color);
 }
-.testimonials-box {
+.projects-box {
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.testimonials .heading {
+.projects .heading {
     margin-bottom: 5rem;
 }
-.testimonials-box img {
+.projects-box img {
     width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
@@ -479,7 +486,7 @@ service-box .service-info {
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
 }
-.testimonial-item {
+.project-item {
     min-height: 550px;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
@@ -497,15 +504,15 @@ service-box .service-info {
     color: white;
     transition: 0.4s ease-in-out;
 }
-.testimonial-item:hover{
+.project-item:hover{
     border: 3px solid var(--main-color);
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
 }
-.testimonial-item h2 {
+.project-item h2 {
     font-size: 2.8rem;
 }
-.testimonial-item p {
+.project-item p {
     font-size: 1.3rem;
 }
 #star {
