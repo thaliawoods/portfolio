@@ -295,13 +295,16 @@ home-img img:hover{
     text-align: center;
     margin: 5rem 0;
 }
+
 .education {
     padding: 100px 15px;
     background: var(--second-bg-color);
 }
+
 .education h2 {
     margin-bottom: 5rem;
 }
+
 .timeline-items {
     max-width: 1200px;
     margin: auto;
@@ -309,6 +312,7 @@ home-img img:hover{
     flex-wrap: wrap;
     position: relative;
 }
+
 .timeline-items::before {
     content: "";
     position: absolute;
@@ -317,21 +321,27 @@ home-img img:hover{
     background-color: var(--main-color);
     left: calc(50% - 1px);
 }
+
 .timeline-item {
-    margin-bottom: 40px;
-    width: 100px;
+    /* margin-bottom: 40px;
+    width: 100px; */
     position: relative;
-}
+} 
+
 .timeline-item:last-child {
     margin-bottom: 0;
 }
+
 .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
 }
+
 .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
-}
+} 
+
+/* 
 .timeline-dot {
     height: 21px;
     width: 21px;
@@ -341,14 +351,16 @@ home-img img:hover{
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
-    top: 10px;
-}
+    top: 10px; 
+} */
+
 .timeline-date {
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
+
 .timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
@@ -358,16 +370,19 @@ home-img img:hover{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
 .timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+
 .timeline-content h3 {
     font-size: 20px;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
+
 .timeline-content p {
     color: white;
     font-size: 16px;
@@ -378,13 +393,15 @@ home-img img:hover{
 ::-webkit-scrollbar {
     width: 15px;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
+
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
     width: 50px;
-}
+} 
 
 /* Services */
 .services{
