@@ -404,7 +404,7 @@ home-img img:hover{
     width: 50px;
 } 
 
-/* /* Skills */
+/* Skills */
 .skills {
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -439,12 +439,22 @@ home-img img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .skill-info h4 {
     font-size: 20px;
     color: #363636;
     margin: 0 0 10px;
     font-weight: 500;
-    text-align: center; /* center the title */
+    text-align: center;
 }
 
 .skill-info p {
@@ -452,66 +462,18 @@ home-img img:hover{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
-    text-align: center; /* center the text */
+    text-align: center; 
 }
 
-/* 
-.skills {
-    background-color: var(--bg-color);
-    color: white;
+.skill-info i {
+    font-size: 4rem;
+    margin: 1rem;
 }
 
-.skills h2 {
-    margin-bottom: 5rem;
-    color: #363636;
+.skill-info {
+    text-align: center;
+    margin-bottom: 1rem;
 }
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2.5rem;
-} 
-
-.skill-box {
-    background-color: var(--main-color);
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-
-.skill-box:hover{
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-}
-
-.skill-box .service-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
-}
-
-.skill-info h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
-}
-
-.skill-info p {
-    font-size: 1.6rem;
-    font-weight: 800;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
-}  */
 
 /* Projects */
 .projects {
@@ -532,14 +494,15 @@ home-img img:hover{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
-}.project-item {
-    min-height: 30rem; /* changed from 550px */
-    max-width: 100%; /* changed from 450px */
+}
+.project-item {
+    min-height: 30rem; 
+    max-width: 100%; 
     background: #363636(0, 0, 0, 0.7);
     border: 3px solid #363636(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 2rem;
-    padding: 3rem; /* changed from 30px 60px */
+    padding: 3rem; 
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -549,31 +512,34 @@ home-img img:hover{
     gap: 1.5rem;
     color: #363636;
     transition: 0.4s ease-in-out;
-  }
-  
-  .project-item img {
-    width: 100%; /* changed from 15rem */
-    height: auto; /* added to maintain aspect ratio */
-    border-radius: 1rem; /* changed from 50% */
+}
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
-  }
-  
-  .project-item h2 {
-    font-size: 2.2rem; /* changed from 2.8rem */
-  }
-  
-  .project-item p {
+}
+
+.project-item h2 {
+    font-size: 2.2rem;
+}
+
+.project-item p {
     font-size: 1.3rem;
-    padding: 0 1rem; /* added to create some breathing room */
-  }
-  
-.project-item:hover{
+    padding: 0 1rem;
+}
+
+.project-item i {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.project-item:hover {
     border: 3px solid var(--main-color);
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
 }
-
 /* }
 .projects-box img {
     width: 15rem;
