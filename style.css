@@ -33,9 +33,7 @@ body {
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    /* background: rgba(0, 0, 0.3); */
     background: white;
-    /* backdrop-filter: blur(10px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +41,7 @@ body {
 } 
 
 .logo {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -324,8 +322,6 @@ home-img img:hover{
 }
 
 .timeline-item {
-    /* margin-bottom: 40px;
-    width: 100px; */
     position: relative;
 } 
 
@@ -341,19 +337,6 @@ home-img img:hover{
 .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 } 
-
-/* 
-.timeline-dot {
-    height: 21px;
-    width: 21px;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px; 
-} */
 
 .timeline-date {
     font-size: 20px;
@@ -422,17 +405,20 @@ home-img img:hover{
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: stretch; 
     gap: 2.5rem;
 }
 
 .skill-box {
-    background-color: #f3f3f3; /* light gray background color */
+    background-color: #f3f3f3; 
     border: 3px solid var(--main-color);
     border-radius: 4rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     padding: 30px 50px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
 }
 
 .skill-box:hover {
@@ -479,6 +465,7 @@ home-img img:hover{
 .projects {
     background: var(--second-bg-color);
 }
+
 .projects-box {
     background-size: cover;
     display: flex;
@@ -539,7 +526,7 @@ home-img img:hover{
     border: 3px solid var(--main-color);
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
-}
+} */
 /* }
 .projects-box img {
     width: 15rem;
@@ -775,5 +762,4 @@ home-img img:hover{
     }
     .skills-container {
         grid-template-columns: repeat(1,1fr);
-    }
-}
+    

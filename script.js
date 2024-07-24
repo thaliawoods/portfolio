@@ -24,32 +24,3 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-
-// if(window.matchMedia && window.matchMedia('(prefers-colors-scheme:dark)').matches){
-//     alert('Wow je suis en darkmode !')
-// // }
-// function themeNuitJour() {
-
-//     const date = new Date()
-//     const hour = date.getHours()
-
-//     if (hour < 5|| hour > 20) {
-
-//         document.documentElement.style.setProperty('--bg-color', 'white')
-//         document.documentElement.style.setProperty('--second-bg-color', '#f1f1f1')
-//         document.documentElement.style.setProperty('--text-color', '#333')
-//         document.documentElement.style.setProperty('--main-color', '#00ffee')
-    
-//     } else {
-
-//         document.documentElement.style.setProperty('--bg-color', '#080808')
-//         document.documentElement.style.setProperty('--second-bg-color', '#131313')
-//         document.documentElement.style.setProperty('--text-color', 'white')
-//         document.documentElement.style.setProperty('--main-color', '#00ffee')
-
-//     }
-//     }
-
-
-
-
