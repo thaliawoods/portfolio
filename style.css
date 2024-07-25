@@ -762,4 +762,5 @@ home-img img:hover{
     }
     .skills-container {
         grid-template-columns: repeat(1,1fr);
-    
+    }
+}
