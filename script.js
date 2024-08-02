@@ -1,24 +1,33 @@
-let menuIcon = document.querySelector('menu-icon');
-let navbar = document.querySelector('.navbar');
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a')
+document.addEventListener('DOMContentLoaded', () => {
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+    // Gérer l'affichage du menu en mode responsive
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a [href*=' + id + ']'.classList.add('active'))
-            })
-        }
-    })
-}
+    // Mettre en surbrillance les liens de navigation en fonction de la section visible
+    window.onscroll = () => {
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
 
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(links => {
+                    links.classList.remove('active');
+                    if (links.getAttribute('href') === `#${id}`) {
+                        links.classList.add('active');
+                    }
+                });
+            }
+        });
+    };
+});
 
 // sélectionnez le bouton par son ID
 var hireBtn = document.getElementById('hire-btn');

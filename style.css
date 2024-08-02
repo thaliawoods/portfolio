@@ -729,7 +729,7 @@ home-img img:hover{
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(229, 229, 229, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left:  2px solid var(--main-color);
@@ -743,7 +743,7 @@ home-img img:hover{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .home {
         flex-direction: column-reverse;
@@ -789,3 +789,8 @@ home-img img:hover{
     75% { opacity: 0.9; }
     100% { opacity: 0; }
 }
+
+
+
+
+
