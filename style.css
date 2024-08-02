@@ -23,8 +23,14 @@ html {
 }
 
 body {
+    --bgColor: white;
     background: var(--bg-color);
     color: var(--text-color);
+    background-color: var(--bgColor);
+    background-color: var(--bgColor);
+    transition: background-color 0.5s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -763,4 +769,23 @@ home-img img:hover{
     .skills-container {
         grid-template-columns: repeat(1,1fr);
     }
+}        
+.particle {
+    animation: var(--duration) linear var(--delay) var(--iteration) sparkle;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 var(--blur) var(--spread) rgba(0, 0, 0, 0.5); /* Noir avec 50% d'opacité */
+    height: var(--size);
+    left: var(--left);
+    position: absolute;
+    top: var(--top);
+    width: var(--size);
+    z-index: 99;
+    opacity: 0;
+}
+@keyframes sparkle {
+    0% { opacity: 0; }
+    25% { opacity: var(--opacity); }
+    75% { opacity: 0.9; }
+    100% { opacity: 0; }
 }
