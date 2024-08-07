@@ -70,11 +70,12 @@ hireBtn.addEventListener("click", function (event) {
 
 // sparkles
 const addSparkles = function () {
-  let maxCount = 200;
+  let maxCount = 700;
 
   for (let i = 0; i < maxCount; i++) {
     let sparkle = document.createElement("div");
     sparkle.classList.add("particle");
+    // sparkle.innerHTML = "★"; 
 
     document.body.appendChild(sparkle);
 
