@@ -70,7 +70,7 @@ hireBtn.addEventListener("click", function (event) {
 
 // sparkles
 const addSparkles = function () {
-  let maxCount = 700;
+  let maxCount = 400;
 
   for (let i = 0; i < maxCount; i++) {
     let sparkle = document.createElement("div");
