@@ -116,3 +116,4 @@ const removeSparkles = function () {
     sparkles[0].parentNode.removeChild(sparkles[0]);
   }
 };
+
